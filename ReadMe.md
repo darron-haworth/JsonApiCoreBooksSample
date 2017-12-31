@@ -1,13 +1,13 @@
 # JsonApiCoreBooksSample
 
-The purpose of this project is to give a sense for how well I am able to get started building REST APIs using .Net Core and [JSON API .Net Core](https://json-api-dotnet.github.io/JsonApiDotNetCore/) framework while following the JSONAPI specification.
+The purpose of this project is to give a sense for how well I am able to get started building REST APIs using [.Net Core](https://www.nuget.org/packages/Microsoft.AspNetCore.All/2.0.3) and [JSON API .Net Core](https://json-api-dotnet.github.io/JsonApiDotNetCore/) framework while following the [JSONAPI](http://jsonapi.org/) specification.
 
 I haven't yet had explicit .NET Core experience so this is a great opportunity for me to get my feet wet and demonstrate my abilty to complete a basic set of api tasks.  
 
-I've chosen to use Visual Studio Enterprise 2017 on my Windows 10 laptop because dotNetCore 2.x has macOs 10.12 "Sierra" as a prerequisite and the MacBook pro I use is on  10.11.06.
+I've chosen to use my Windows 10 laptop because dotNetCore 2.x has macOs 10.12 "Sierra" as a prerequisite and the MacBook pro I use is on  10.11.06.  I used Visual Studio Enterprise 2017 as my Integrated Development Environment.
 
-As directed, I will be using Entity Framework Core alongside JSONAPI .Net Core to create a few models, define their structure, and then create controllers to expose them to the outside world with the typical set of CRUD operations.
-For convenience sake I have choosen SQLite for my database, normally I prefer SQL Server 2012 for corporate projects, and Postgres for open source projects.
+As directed, I will be using [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) alongside JSONAPI .Net Core to create a few models, define their structure, and then create controllers to expose them to the outside world with the typical set of CRUD operations.
+For convenience sake I have choosen [SQLite](https://www.sqlite.org/) for my database, normally I prefer SQL Server 2012 for corporate projects, and Postgres for open source projects.
 
 I've also created all of the solution files in one WebApi project, normally I would inlude separate class libraries with one for Repositories (DAL), and another for Domain (Models) but this is being created simply to demonstrate basic competency in .Net Core Web Api.
 
