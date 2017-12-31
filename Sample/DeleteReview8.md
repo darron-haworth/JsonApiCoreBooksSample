@@ -52,7 +52,7 @@ Content-Type: application/vnd.api+json
 Accept: [{"key":"Content-Type","value":"application/vnd.api+json","description":"","enabled":true}]
 Cache-Control: no-cache
 ```
-Reponse:
+Delete Reponse:
 ```
 HTTP/1.1 204 No Content
 Server: Kestrel
@@ -67,7 +67,7 @@ GET /books/1/Reviews HTTP/1.1
 Host: localhost:4793
 Cache-Control: no-cache
 ```
-Delete Response:
+Response:
 ```
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
