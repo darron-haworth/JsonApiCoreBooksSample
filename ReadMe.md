@@ -1,6 +1,6 @@
 # JsonApiCoreBooksSample
 
-The purpose of this project is to give a sense for how well I am able to get started building REST APIs using .Net Core and JSONAPI .Net Core framework while following the JSONAPI specification.
+The purpose of this project is to give a sense for how well I am able to get started building REST APIs using .Net Core and [JSON API .Net Core](https://json-api-dotnet.github.io/JsonApiDotNetCore/) framework while following the JSONAPI specification.
 
 I haven't yet had explicit .NET Core experience so this is a great opportunity for me to get my feet wet and demonstrate my abilty to complete a basic set of api tasks.  
 
@@ -13,23 +13,26 @@ I've also created all of the solution files in one WebApi project, normally I wo
 
 I've created three models as follows:
 
-- Author
-  - Id
-  - FirstName
-  - LastName
-  - Books
+Author | 
+--- | 
+*Id* | 
+FirstName | 
+LastName | 
+Books| 
 
-- Book
-  * Id
-  * Title
-  * Isbn
-  * PublishDate
-  * Reviews
+Book | 
+--- | 
+*Id* | 
+Title | 
+Isbn | 
+PublishDate | 
+Reviews |
 
-- Review
-  * Id
-  * ReviewerName
-  * ReviewBody
+Review | 
+--- | 
+*Id* | 
+ReviewerName | 
+ReviewBody | 
   
  The relationships defined between these models are such that authors have many books, and books have many reviews.
  
@@ -40,5 +43,5 @@ I've created three models as follows:
  
  Each of these endpoints support basic CRUD operations following the JSONApi standard Http Verbs. (POST, GET, PATCH, and DELETE)
  
- See my the /Sample/ReadMe.md file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
+ See my the [Sample ReadMe](/Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
  
