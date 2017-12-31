@@ -10,5 +10,6 @@
 * [Create Review Book 1](CreateBook1Review.md)
 
 ## Update - PATCH
+* [Update Review 8](UpdateReview8Body.md)
 
 ## Delete - DELETE
