@@ -7,7 +7,8 @@ Host: localhost:4793
 Content-Type: application/vnd.api+json
 Accept: [{"key":"Content-Type","value":"application/vnd.api+json","description":"","enabled":true}]
 Cache-Control: no-cache
-
+```
+```javascript
 {
   "data": {
     "type": "reviews",
@@ -31,7 +32,8 @@ X-SourceFiles: =?UTF-8?B?QzpcZGhfY29kZVxKc29uQXBpQ29yZUJvb2tzU2FtcGxlXFJldmlld3M
 X-Powered-By: ASP.NET
 Date: Sun, 31 Dec 2017 20:26:31 GMT
 Content-Length: 147
-
+```
+```javascript
 {
     "data": {
         "type": "reviews",
