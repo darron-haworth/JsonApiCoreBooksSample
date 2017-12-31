@@ -48,7 +48,7 @@ namespace JsonApiCoreBooksSample
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, AppDbContext context)
         {
-                        app.UseJsonApi();
+            app.UseJsonApi();
         }
     }
 }
