@@ -13,3 +13,4 @@
 * [Update Review 8](UpdateReview8Body.md)
 
 ## Delete - DELETE
+* [Delete Review 8 from Book 1](DeleteReview8.md)
