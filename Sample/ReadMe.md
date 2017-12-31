@@ -1,13 +1,14 @@
 ﻿# Sample API calls 
 
-## Read
+## Read - GET
 * [Author 3](ReadAuthor.md)
 * [Author 3 Books](ReadAuthor3Books.md)
 * [Book 3 Reviews](ReadBook3Reviews.md)
 
 
-## Create
+## Create - POST
+* [Create Review Book 1](CreateBook1Review.md)
 
-## Update
+## Update - PATCH
 
-## Delete
+## Delete - DELETE
