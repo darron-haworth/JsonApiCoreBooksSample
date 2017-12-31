@@ -34,7 +34,7 @@ Review |
 ReviewerName | 
 ReviewBody | 
   
- The relationships defined between these models are such that authors have many books, and books have many reviews.
+ The relationships defined between these models are such that authors may have many books, and books may have many reviews.
  
  The models are exposed via the following JSONAPI REST API endpoints:
  * /authors
