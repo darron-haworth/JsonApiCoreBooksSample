@@ -53,7 +53,7 @@ Accept: [{"key":"Content-Type","value":"application/vnd.api+json","description":
 Cache-Control: no-cache
 ```
 Reponse:
-```javascript
+```
 HTTP/1.1 204 No Content
 Server: Kestrel
 X-SourceFiles: =?UTF-8?B?QzpcZGhfY29kZVxKc29uQXBpQ29yZUJvb2tzU2FtcGxlXHJldmlld3NcOA==?=
@@ -67,7 +67,7 @@ GET /books/1/Reviews HTTP/1.1
 Host: localhost:4793
 Cache-Control: no-cache
 ```
-Response:
+Delete Response:
 ```
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
