@@ -1,5 +1,4 @@
 ﻿using JsonApiDotNetCore.Models;
-using System;
 using System.Collections.Generic;
 
 namespace JsonApiCoreBooksSample.Domain
