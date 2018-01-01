@@ -9,6 +9,8 @@ I've chosen to use my Windows 10 laptop because dotNetCore 2.x has macOs 10.12 "
 As directed, I will be using [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) alongside JSONAPI .Net Core to create a few models, define their structure, and then create controllers to expose them to the outside world with the typical set of CRUD operations.
 For convenience sake I have choosen [SQLite](https://www.sqlite.org/) for my database, normally I prefer SQL Server 2012 for corporate projects, and Postgres for open source projects.
 
+EF Migrations are enabled in the project, on the first startup a SQLite DB will be created and seeded with some sample data, the project should be set up such that you can clone and run in IISExpress with /authors as the default endpoint. The JSON API .NET Core settings are using absolute urls so self links can be clicked on to drill into child collections.
+
 I've also created all of the solution files in one WebApi project, normally I would inlude separate class libraries with one for Repositories (DAL), and another for Domain (Models) but this is being created simply to demonstrate basic competency in .Net Core Web Api.
 
 I've created three models as follows:

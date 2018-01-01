@@ -61,7 +61,7 @@ X-Powered-By: ASP.NET
 Date: Sun, 31 Dec 2017 20:47:03 GMT
 ```
 
-## Get Book 1 Reviews post-delete (no more 8)
+## Get Book 1 Reviews post-delete (review 8 is gone)
 ```
 GET /books/1/Reviews HTTP/1.1
 Host: localhost:4793
