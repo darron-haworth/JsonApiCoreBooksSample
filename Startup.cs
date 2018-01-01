@@ -119,6 +119,8 @@ namespace JsonApiCoreBooksSample
 
                 );
             }
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseJsonApi();
         }
     }
