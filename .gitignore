@@ -260,3 +260,11 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/192.168.2.17/deploy$
+/Properties/PublishProfiles
+/JsonApiCoreBooksSample.zip
+/JsonApiCoreBooksSample.SourceManifest.xml
+/JsonApiCoreBooksSample.SetParameters.xml
+/JsonApiCoreBooksSample.Parameters.xml
+/JsonApiCoreBooksSample.deploy.cmd
+/JsonApiCoreBooksSample.deploy-readme.txt
