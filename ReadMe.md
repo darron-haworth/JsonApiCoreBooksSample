@@ -46,8 +46,8 @@ ReviewBody |
  Each of these endpoints support basic CRUD operations following the JSONApi standard Http Verbs. (POST, GET, PATCH, and DELETE)
 
 # Sample Section 
-[Samples Readme](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
- [PostMan export](Sample/JsonApiCoreBooksSample_Postman.postman_collection.json)
+* [Samples Readme](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
+* [PostMan export](Sample/JsonApiCoreBooksSample_Postman.postman_collection.json)
 
  # TODOs
 
