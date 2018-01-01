@@ -1,4 +1,4 @@
-﻿# Get All Books
+﻿# /books
 
 ## Request
 ```

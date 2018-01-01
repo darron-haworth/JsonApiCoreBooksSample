@@ -1,4 +1,4 @@
-﻿# Get All Reviews
+﻿# /reviews
 
 ## Request
 ```

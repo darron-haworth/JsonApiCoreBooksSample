@@ -1,4 +1,4 @@
-﻿# Get All Authors
+﻿# /authors
 
 ## Request
 ```
