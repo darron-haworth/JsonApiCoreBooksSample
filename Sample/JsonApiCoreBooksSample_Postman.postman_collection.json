@@ -1,0 +1,265 @@
+{
+	"info": {
+		"name": "JsonApiCoreBooksSample_Postman",
+		"_postman_id": "632004c9-a54d-2229-3b7a-1f412f5dbee0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateBookReview-POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"type\": \"reviews\",\r\n    \"attributes\": {\r\n      \"BookId\": 1,\r\n      \"ReviewerName\": \"Diane\",\r\n      \"ReviewBody\": \"Very interesting read\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9700/Reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9700",
+					"path": [
+						"Reviews"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AddBook-POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\":\r\n    {\r\n      \"type\": \"books\",\r\n      \"attributes\": {\r\n        \"Title\": \"Rocket Boys (The Coalwood Seris #1)\",\r\n        \"ISBN\": \"B012HUYI9O\",\r\n        \"PublishDate\": \"1988-10-29T00:00:00\",\r\n        \"AuthorId\": 2\r\n      }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4793/Books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"Books"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AddAuthor-POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\":\r\n    {\r\n      \"type\": \"authors\",\r\n      \"attributes\": {\r\n        \"FirstName\": \"Some\",\r\n        \"LastName\": \"Person\"\r\n      }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4793/Authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"Authors"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook2Title-PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"type\": \"books\",\r\n    \"id\": \"2\",\r\n    \"attributes\": {\r\n      \"Title\": \"12 Rules for Life\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4793/Books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"Books"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateReviewBody-PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"type\": \"reviews\",\r\n    \"id\": \"1\",\r\n    \"attributes\": {\r\n      \"ReviewBody\": \"Chaning my review to: Wow, I don't know what to say!\",\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4793/Reviews/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"Reviews",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAuthor5-DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4793/Authors/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"Authors",
+						"5"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetBooks-GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4793/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"books"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteReview8-DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Accept",
+						"value": "[{\"key\":\"Content-Type\",\"value\":\"application/vnd.api+json\",\"description\":\"\",\"enabled\":true}]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4793/reviews/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4793",
+					"path": [
+						"reviews",
+						"8"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
