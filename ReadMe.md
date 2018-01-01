@@ -44,9 +44,11 @@ ReviewBody |
  * [/reviews](Sample/GetAllReviews.md)
  
  Each of these endpoints support basic CRUD operations following the JSONApi standard Http Verbs. (POST, GET, PATCH, and DELETE)
- 
- See my the [Sample ReadMe](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
- 
+
+# Sample Section 
+[Samples Readme](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
+ [PostMan export](Sample/JsonApiCoreBooksSample_Postman.postman_collection.json)
+
  # TODOs
 
 * Add [Microsoft.AspNetCore.Mvc.Versioning 2.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Versioning)
