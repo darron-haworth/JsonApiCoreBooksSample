@@ -40,7 +40,7 @@ ReviewBody |
  
  # Deployed Project
 
- I deployed this project to the web at a domain I own [dottlebot.com](http://dottlebot.com) on a server 2012 R2 VM.
+ I deployed this project to the web at a domain I own ([dottlebot.com](http://dottlebot.com)), it is being hosted on a HyperV VM in my office that is running Server 2012 R2.
 
  ## The models are exposed via the following JSONAPI REST API endpoints:
  * [/authors](http://dottlebot.com/authors)
