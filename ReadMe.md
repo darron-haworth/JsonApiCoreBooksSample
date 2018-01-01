@@ -38,8 +38,11 @@ ReviewBody |
   
  The relationships defined between these models are such that authors may have many books, and books may have many reviews.
  
- I deployed this project to the web at a personal domain name I own, the project is available at dottlebot.com
- The models are exposed via the following JSONAPI REST API endpoints:
+ # Deployed Project
+
+ I deployed this project to the web at a domain I own [dottlebot.com](http://dottlebot.com) on a server 2012 R2 VM.
+
+ ## The models are exposed via the following JSONAPI REST API endpoints:
  * [/authors](http://dottlebot.com/authors)
  * [/books](http://dottlebot.com/books)
  * [/reviews](http://dottlebot.com/reviews)
