@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Authors" Category="Table" Bounds="-3.16999973773943,203.206038393378,192.613333333333,141.92" Group="Expanded" Label="Authors" />
+    <Node Id="Authors_FirstName" Category="Field Optional" Bounds="16.8300002622606,299.166038393378,73.7966666666667,25.96" Description="text" Label="FirstName" />
+    <Node Id="Authors_Id" Category="Field Primary" Bounds="16.8300002622606,243.206038393378,50,25.96" Description="bigint" Label="Id" />
+    <Node Id="Authors_LastName" Category="Field Optional" Bounds="96.8300002622606,243.206038393378,72.6133333333333,25.96" Description="text" Label="LastName" />
+    <Node Id="Books" Category="Table" Bounds="-31.8633330710728,31.2860383933783,250,141.92" Group="Expanded" Label="Books" />
+    <Node Id="Books_AuthorId" Category="Field Foreign" Bounds="-11.8633330710728,127.246038393378,66.85,25.96" Description="bigint" Label="AuthorId" />
+    <Node Id="Books_Id" Category="Field Primary" Bounds="-11.8633330710728,71.2860383933783,50,25.96" Description="bigint" Label="Id" />
+    <Node Id="Books_Isbn" Category="Field Optional" Bounds="68.1366669289272,71.2860383933783,50,25.96" Description="text" Label="Isbn" />
+    <Node Id="Books_PublishDate" Category="Field" Bounds="84.9866669289272,127.246038393378,83.1233333333333,25.96" Description="text" Label="PublishDate" />
+    <Node Id="Books_Title" Category="Field Optional" Bounds="148.136666928927,71.2860383933783,50,25.96" Description="text" Label="Title" />
+    <Node Id="Database" Category="Database" Bounds="-53.0349997377395,-180.633961606622,292.343333333333,545.76" Group="Expanded" Label="JsonApiCoreSampleData.db" UseManualLocation="True" />
+    <Node Id="Reviews" Category="Table" Bounds="-33.0349997377395,-140.633961606622,252.343333333333,141.92" Group="Expanded" Label="Reviews" />
+    <Node Id="Reviews_BookId" Category="Field Foreign" Bounds="66.9650002622605,-100.633961606622,57.1633333333334,25.96" Description="bigint" Label="BookId" />
+    <Node Id="Reviews_Id" Category="Field Primary" Bounds="-13.0349997377395,-100.633961606622,50,25.96" Description="bigint" Label="Id" />
+    <Node Id="Reviews_ReviewBody" Category="Field Optional" Bounds="-13.0349997377395,-44.6739616066217,83.49,25.96" Description="text" Label="ReviewBody" />
+    <Node Id="Reviews_ReviewerName" Category="Field Optional" Bounds="100.455000262261,-44.6739616066217,98.8533333333334,25.96" Description="text" Label="ReviewerName" />
+  </Nodes>
+  <Links>
+    <Link Source="Authors" Target="Authors_FirstName" Category="Contains" />
+    <Link Source="Authors" Target="Authors_Id" Category="Contains" />
+    <Link Source="Authors" Target="Authors_LastName" Category="Contains" />
+    <Link Source="Books" Target="Books_AuthorId" Category="Contains" />
+    <Link Source="Books" Target="Books_Id" Category="Contains" />
+    <Link Source="Books" Target="Books_Isbn" Category="Contains" />
+    <Link Source="Books" Target="Books_PublishDate" Category="Contains" />
+    <Link Source="Books" Target="Books_Title" Category="Contains" />
+    <Link Source="Books_AuthorId" Target="Authors_Id" Category="Foreign Key" Label="FK_Books_0_0" />
+    <Link Source="Database" Target="Authors" Category="Contains" />
+    <Link Source="Database" Target="Books" Category="Contains" />
+    <Link Source="Database" Target="Reviews" Category="Contains" />
+    <Link Source="Reviews" Target="Reviews_BookId" Category="Contains" />
+    <Link Source="Reviews" Target="Reviews_Id" Category="Contains" />
+    <Link Source="Reviews" Target="Reviews_ReviewBody" Category="Contains" />
+    <Link Source="Reviews" Target="Reviews_ReviewerName" Category="Contains" />
+    <Link Source="Reviews_BookId" Target="Books_Id" Category="Foreign Key" Label="FK_Reviews_0_0" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="Database" />
+    <Category Id="Field" />
+    <Category Id="Field Foreign" />
+    <Category Id="Field Optional" />
+    <Category Id="Field Primary" />
+    <Category Id="Foreign Key" />
+    <Category Id="Table" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Description" Label="Description" Description="Description" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="True">
+      <Condition Expression="HasCategory('Field')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
