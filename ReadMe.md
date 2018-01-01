@@ -47,7 +47,7 @@ ReviewBody |
 
 # Sample Section 
 * [Samples Readme](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
-* [PostMan export](Sample/JsonApiCoreBooksSample_Postman.postman_collection.json)
+* [PostMan export](Sample/JsonApiCoreBooksSample_Postman.postman_collection.json) - Download and import into PostMan to exercise endpoints against local project.
 
  # TODOs
 
