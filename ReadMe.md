@@ -47,3 +47,7 @@ ReviewBody |
  
  See my the [Sample ReadMe](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
  
+ # TODOs
+
+* Add [Microsoft.AspNetCore.Mvc.Versioning 2.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Versioning)
+* Add [Swashbuckle.AspNetCore 1.1.0](https://www.nuget.org/packages/Swashbuckle.AspNetCore/)
