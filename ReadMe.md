@@ -15,14 +15,14 @@ I've also created all of the solution files in one WebApi project, normally I wo
 
 I've created three models as follows:
 
-Author | 
+[Author](Domain/Author.cs) | 
 --- | 
 *Id* | 
 FirstName | 
 LastName | 
 Books| 
 
-Book | 
+[Book](Domain/Book.cs) | 
 --- | 
 *Id* | 
 Title | 
@@ -30,7 +30,7 @@ Isbn |
 PublishDate | 
 Reviews |
 
-Review | 
+[Review](Domain/Review.cs) | 
 --- | 
 *Id* | 
 ReviewerName | 
