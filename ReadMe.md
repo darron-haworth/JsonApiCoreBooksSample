@@ -37,11 +37,11 @@ ReviewBody |
  The relationships defined between these models are such that authors may have many books, and books may have many reviews.
  
  The models are exposed via the following JSONAPI REST API endpoints:
- * /authors
- * /books
- * /reviews
+ * [/authors](Sample/GetAllAuthors.md)
+ * [/books](Sample/GetAllBooks.md)
+ * [/reviews](Sample/GetAllReviews.md)
  
  Each of these endpoints support basic CRUD operations following the JSONApi standard Http Verbs. (POST, GET, PATCH, and DELETE)
  
- See my the [Sample ReadMe](/Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
+ See my the [Sample ReadMe](Sample/ReadMe.md) file for links to the completed Requests and responses that demonstrate successful completion of each of the CRUD operations.
  
