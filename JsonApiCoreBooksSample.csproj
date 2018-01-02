@@ -3,9 +3,19 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="192.168.2.17\**" />
+    <Content Remove="192.168.2.17\**" />
+    <EmbeddedResource Remove="192.168.2.17\**" />
+    <None Remove="192.168.2.17\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="JsonApiCoreBooksSample.deploy-readme.txt" />
+    <None Remove="JsonApiCoreBooksSample.deploy.cmd" />
+    <None Remove="JsonApiCoreBooksSample.Parameters.xml" />
+    <None Remove="JsonApiCoreBooksSample.SetParameters.xml" />
+    <None Remove="JsonApiCoreBooksSample.SourceManifest.xml" />
+    <None Remove="JsonApiCoreBooksSample.zip" />
   </ItemGroup>
 
   <ItemGroup>
