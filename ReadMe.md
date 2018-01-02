@@ -38,10 +38,14 @@ ReviewBody |
   
  The relationships defined between these models are such that authors may have many books, and books may have many reviews.
  
- The models are exposed via the following JSONAPI REST API endpoints:
- * [/authors](Sample/GetAllAuthors.md)
- * [/books](Sample/GetAllBooks.md)
- * [/reviews](Sample/GetAllReviews.md)
+ # Deployed Project
+
+ I deployed this project to the web at a domain I own ([dottlebot.com](http://dottlebot.com)), it is being hosted on a HyperV VM in my office that is running Server 2012 R2.
+
+ ## The models are exposed via the following JSONAPI REST API endpoints:
+ * [/authors](http://dottlebot.com/authors)
+ * [/books](http://dottlebot.com/books)
+ * [/reviews](http://dottlebot.com/reviews)
  
  Each of these endpoints support basic CRUD operations following the JSONApi standard Http Verbs. (POST, GET, PATCH, and DELETE)
 
